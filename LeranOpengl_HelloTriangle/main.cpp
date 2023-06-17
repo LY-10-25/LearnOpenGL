@@ -112,18 +112,18 @@ int main()
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
     glLinkProgram(shaderProgram);
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-    }
+    //glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+    //if (!success) {
+    //    glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+    //}
 
     glAttachShader(shaderProgram1, vertexShader);
     glAttachShader(shaderProgram1, fragmentShader1);
     glLinkProgram(shaderProgram1);
-    glGetProgramiv(shaderProgram1, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram1, 512, NULL, infoLog);
-    }
+    //glGetProgramiv(shaderProgram1, GL_LINK_STATUS, &success);
+    //if (!success) {
+    //    glGetProgramInfoLog(shaderProgram1, 512, NULL, infoLog);
+    //}
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
